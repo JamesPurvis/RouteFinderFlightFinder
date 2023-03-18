@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteFinder - Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container min-vw-100" id="header">
+        <div class="row text-center" id="branding">
+            <div class="col-9 pt-3">
+                <p class="navbar-brand">RouteFinder</p>
+            </div>
+            <div class="col-1 pt-4" id="login">
+                <i class="fas fa-user fa-sm"></i>
+                </div>
+                <div class="col-2 pt-4">
+                <p>Log in</p>
+                </div>
+            </div>
+        </div>
+        <div class="container p-3">
+        <div class="row pb-3" id="headline">
+            <div class="cols-12">
+                <h1 class="text-white">Search for your next trip below!</h1>
+            </div>
+        </div>
+        <div class="row" id="tripInput">
+            <div class="col-2">
+                <input class="form-control" id="from" name="from" placeholder="From"/>
+            </div>
+            <div class="col-2">
+                <input class="form-control" id="to" name="to" placeholder="To"/>
+            </div>
+            <div class="col-2">
+                <input type="date" class="form-control" id="depart" name="depart" placeholder="Departure">
+            </div>
+            <div class="col-2">
+                <input type="date" class="form-control" id="return" name="return" placeholder="Return">
+            </div>
+            <div class="col-3 pb-5">
+                <button id="search" type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+    </div>
+    <div class="container p-5 min-vw-100" id="info">
+        <div class="row pb-5 px-3">
+            <div class="col-3" id="bubbleone">
+                <i class="fas fa-hotel fa-2x ms-3"></i>
+                <p class="fw-bolder pt-5 ms-3">Hotel</p>
+            </div>
+            <div class="col-1 col-offset-1"></div>
+            <div class="col-3" id="bubbletwo">
+                <i class="fas fa-plane fa-2x pb-5 ms-3"></i>
+                <p class="fw-bolder pt-5 ms-3">Flight</p>
+            </div>
+            <div class="col-1 col-offset-1"></div>
+            <div class="col-3" id="bubblethree">
+                <i class="fas fa-car fa-2x pb-5 ms-3"></i>
+                <p class="fw-bolder pt-5 ms-3">Car</p>
+            </div>
+        </div>
+        <div class="container" id="landing">
+            <div class="row" id="landingheader">
+                <h1 class="text-white fw-bold pt-5">Let's have some fun!</h1>
+            </div>
+            <div class="row" id="landingdescription">
+                <p class="fw-lighter text-white">it's almost summer, beat the heat and get a great deal today!</p>
+            </div>
+            <div class="container" id="button">
+            <button type="button" class="btn btn-primary">Check it out!</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row" id="footer-text">
+            <p class="text-center">Find cheap flights to anywhere!</p>
+            <p class="text-center">© RouteFinder 2023</p>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/865408320e.js" crossorigin="anonymous"></script>
+</html>
