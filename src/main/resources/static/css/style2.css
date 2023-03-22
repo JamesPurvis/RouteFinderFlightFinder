@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    background-image: url('https://images.unsplash.com/photo-1493134799591-2c9eed26201a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80');
+    background-size: cover
+}
+
+a{
+    text-decoration: none;
+}
+
+#topline a::after {
+    content: "|";
+    padding: 12px;
+    opacity: 20%;
+}
+
+#topline {
+    padding: 9px;
+    border-bottom: 0.01em solid;
+    border-color: rgb(255, 255, 255, 0.4);
+}
+
+a.navbar-brand {
+    font-family: 'Happy Monkey';
+    color: rgb(255, 255, 255, 1);
+    border: solid rgb(255, 255, 255, 1);
+    padding: 3px;
+
+}
+
+#headertext {
+    text-align: center;
+    color: white;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+    text-underline-offset: 7px;
+    padding-bottom: 10px;
+}
+
+#searchbox {
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+#searchbox button {
+    background-color: rgb(77, 0, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+#onewaybox button {
+    background-color: rgb(77, 0, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+#from {
+    border-radius: 10px;
+    background-color: rgba(204, 204, 255, 0.5);
+}
+
+#to {
+    border-radius: 10px;
+    background-color: rgba(204, 204, 255, 0.5);
+}
+
+#departure {
+    border-radius: 10px;
+    background-color: rgba(204, 204, 255, 0.5);
+}
+
+#class {
+    border-radius: 10px;
+    background-color: rgba(204, 204, 255, 0.5);
+}
+
+
+#frombox {
+    background: transparent;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"]:focus {
+    outline: none;
+  }
+
+  #classinput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  #adultsinput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  #childreninput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .triplinkactive {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-style: solid;
+    text-underline-offset: 7px;
+    padding-bottom: 10px;
+}
+
+#onewaybox {
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    border-radius: 10px;
+    display: none;
+}

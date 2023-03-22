@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+            xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteFinder - Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style2.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container min-vw-100 min-vh-100" id="header">
+        <div class="row text-end" id="topline">
+            <div class="col-10 pt-1">
+                <a class="text-white opacity-75" href="#">Login</a>
+            </div>
+            <div class="col-1 pt-1">
+                <a class="text-white opacity-75 text-nowrap" href="#">Sign up</a>
+            </div>
+        </div>
+        <div class="row pt-3" id="nav">
+            <div class="col-3">
+            <a class="navbar-brand">Route Finder</a>
+            </div>
+            <div class="col-6">
+                <ul class="navbar-nav ms-auto d-flex flex-row" id="links">
+                    <li>
+                        <a href ="#" class="nav-link active text-white px-3">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white px-3">About us</a>
+                    </li>
+                    <lil>
+                        <a href="#" class="nav-link text-white px-3">Contact us</a>
+                    </lil>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12 pt-5 pb-5" id="headertext">
+                <h1 class="display-1">Explore the world together!</h1>
+                <p class="fw-lighter fs-2 pb-5">Find awesome flights for cheap!</h6>
+            </div>
+        </div>
+
+        <div class="container pt-5 pb-5 mt-5" id="searchbox">
+            <div class="row">
+                <div class="col-9">
+                    <button class="btn btn-primary px-3 mb-3">
+                        <i class="fas fa-plane"></i>Flights</button>
+                </div>
+                <div class="col-1">
+                    <a href="#" onClick="showOneWay()" id="onewaylink" class="fw-bold text-nowrap text-black">One way</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" onClick="showRoundTrip()" id="roundtriplink" class="fw-bold text-nowrap text-black triplinkactive">Roundtrip</a>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 mx-1" id="from">
+                            <div class="container p-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>From</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <i class=" fas fa-plane-departure"></i>
+                                    </div>
+                                    <div class="row">
+                                        <input class="pb-3" type="text" id="frombox"/>
+                                        </div>
+                                        <div class"row">
+                                        <p class="fw-lighter">Where are you leaving from?</p>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mx-1" id="to">
+                            <div class="container p-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>To</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <i class="fas fa-plane-arrival"></i>
+                                    </div>
+                                    <div class="row">
+                                        <input class="pb-3" type="text" id="frombox"/>
+                                        </div>
+                                        <div class"row">
+                                        <p class="fw-lighter">Where do you want to go?</p>
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mx-1" id="departure">
+                            <div class="container p-3">
+                              <div class="row">
+                                <div class="col-12 text-center">
+                                  <p class="text-center">Departure Date</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                  <div class="col-sm-8 text-center">
+                                    <input class="form-control" type="date" id="frombox"/>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                          
+                        <div class="col-2 mx-1" id="class">
+                            <div class="container p-3">
+                                <div class="row pb-4">
+                                    <div class="col-4">
+                                        <p class="fw-bold">Class</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <select id="classinput">
+                                            <option>Economy</option>
+                                            <option>First Class</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label for="adultsinput">Adults:</label>
+                                        <select id="adultsinput">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="childreninput">Children:</label>
+                                        <select id="childreninput">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="container pt-5 pb-5 mt-5" id="onewaybox">
+                    <div class="row">
+                        <div class="col-9">
+                            <button class="btn btn-primary px-3 mb-3">
+                                <i class="fas fa-plane"></i>Flights</button>
+                        </div>
+                        <div class="col-1">
+                            <a href="#" onClick="showOneWay()" id="onewaylink" class="fw-bold text-nowrap text-black triplinkactive">One way</a>
+                        </div>
+                        <div class="col-1">
+                            <a href="#" onClick="showRoundTrip()" id="roundtriplink" class="fw-bold text-nowrap text-black">Roundtrip</a>
+                        </div>
+        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 mx-1" id="to">
+                                    <div class="container p-3">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p>To</p>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <i class="fas fa-plane-arrival"></i>
+                                            </div>
+                                            <div class="row">
+                                                <input class="pb-3" type="text" id="frombox"/>
+                                                </div>
+                                                <div class"row">
+                                                <p class="fw-lighter">Where do you want to go?</p>
+                                                 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 mx-1" id="departure">
+                                    <div class="container p-3">
+                                      <div class="row">
+                                        <div class="col-12 text-center">
+                                          <p class="text-center">Departure Date</p>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                          <div class="col-sm-8 text-center">
+                                            <input class="form-control" type="date" id="frombox"/>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>                          
+                                <div class="col-3 mx-1" id="class">
+                                    <div class="container p-3">
+                                        <div class="row pb-4">
+                                            <div class="col-4">
+                                                <p class="fw-bold">Class</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <select id="classinput">
+                                                    <option>Economy</option>
+                                                    <option>First Class</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="adultsinput">Adults:</label>
+                                                <select id="adultsinput">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="childreninput">Children:</label>
+                                                <select id="childreninput">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+        
+                  </div>
+
+                  
+
+</body>
+<script src="js/script.js"></script>
+<script defer src="js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/865408320e.js" crossorigin="anonymous"></script>
+</html>

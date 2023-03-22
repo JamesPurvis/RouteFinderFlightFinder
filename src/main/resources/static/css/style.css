@@ -1,0 +1,168 @@
+body {
+    background-color: #05203c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#branding {
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 40px;
+color: white;
+}
+
+p.navbar-brand {
+    width: 100px;
+    color: lightskyblue;
+    border: solid lightskyblue;
+    font-family: Lobster Two;
+}
+
+#headline {
+    margin-left: 40px;
+}
+
+#tripInput {
+    margin-left: 40px;
+}
+
+#info {
+    background-color: white;
+}
+
+#search {
+        border-radius: .75em 0 0 ;
+        height: 70px;
+    
+}
+
+#bubbleone {
+    padding-top: 10px;
+    border:  1px  black;
+    border-radius: .75em;
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+}
+
+#bubbleone i {
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+}
+
+
+#bubbletwo i {
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    background-size: cover;
+    width: 50px;
+    height: 5px;
+    background-position: center center;
+}
+
+
+#bubblethree i {
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+}
+
+#bubbleone:hover {
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.9);
+}
+
+#bubbletwo:hover {
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.9);
+}
+
+#bubblethree:hover {
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.9);
+}
+
+#bubbleone {
+    padding-top: 10px;
+    border:  1px  black;
+    border-radius: .75em;
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+}
+
+
+#bubbletwo {
+    padding-top: 10px;
+    border:  1px  black;
+    border-radius: .75em;
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+}
+
+#bubblethree {
+    padding-top: 10px;
+    border:  1px  black;
+    border-radius: .75em;
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+}
+
+#landing {
+    background-image: url('https://images.pexels.com/photos/8782665/pexels-photo-8782665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    border:  1px  black;
+    border-radius: .75em;
+    box-shadow: 0 1px 3px 0 rgba(37,32,31,.3);
+    height: 32.75rem;
+}
+
+#landingheader {
+    text-shadow: 6px 2px 4px rgba(0, 0, 0, 0.9);
+    padding-top: 200px;
+    margin-left: 20px;
+}
+
+#landingdescription {
+    text-shadow: 6px 2px 4px rgba(0, 0, 0, 0.9);
+    margin-left: 20px;
+}
+
+#button {
+    margin-left: 120px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #05203c;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+#from {
+    border-radius: .75em 0 0 ;
+    height: 70px;
+}
+
+#to {
+    border-radius: .75em 0 0 ;
+    height: 70px;
+}
+
+#depart {
+        border-radius: .75em 0 0 ;
+        height: 70px;
+    }
+
+    #return {
+        border-radius: .75em 0 0 ;
+        height: 70px;
+    }
